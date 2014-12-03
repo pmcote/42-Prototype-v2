@@ -1,0 +1,6 @@
+#search-dropdown{
+	/*border:5px,o/utset,transparent;*/
+	border-style: outset;
+	border-width: 1px;
+	border-radius: 5px;
+}

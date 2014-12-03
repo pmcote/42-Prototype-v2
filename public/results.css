@@ -1,0 +1,82 @@
+h1{
+	margin:0;
+}
+h2{
+	margin:0;
+}
+p{
+	margin:0;
+}
+
+.halfleft{
+	float: left;
+	width: 50%;
+	
+}
+.halfright{
+	float: right;
+	width: 50%;
+	border-left: 1px dotted gray;
+}
+.sevenwidth{
+	width:700px;
+}
+.halfup{
+/*	margin: auto;*/
+}
+.setData{
+	margin: 10px auto 5px auto;
+	text-align:center;
+}
+.verticaltext{
+	-webkit-transform: rotate(270deg);
+	float: left;
+	margin: 130px 0 0 0;
+	padding:0;
+}
+.chartandy{
+	height:250px;
+}
+.halfdown{
+	border-top: 1px dotted gray;
+}
+.center{
+	margin-left: 180px;
+}
+.center-text{
+	text-align:center;
+	margin:0;
+}
+.image{
+	width:350px;
+	margin: 0 0 10px 180px;
+}
+.pushright{
+	/*margin-right: 100%;*/
+	margin-right: 200px;
+}
+.inlinepush{
+	display:inline-block;
+	margin-right:15px;
+	margin-left: 5px;
+}
+.inline{
+	display:inline-block;
+}
+#trialtag{
+	display:inline-block;
+	margin-right:15px;
+}
+#notebox{
+	/*margin:10px;*/
+	padding:5px;
+	/*border: 1px solid gray;*/
+}
+#videobox{
+	margin: auto;
+	display:block;
+}
+#trialselect{
+	margin:10px auto 10px auto;
+	width: 120px;
+}
