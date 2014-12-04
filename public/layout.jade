@@ -14,6 +14,9 @@ html
 				.navbar-header
 					a.navbar-brand(href='/')
 						span.glyphicon.glyphicon-home
+					a.navbar-brand(href='#')
+						span(title="Back").glyphicon.glyphicon-chevron-left
+					block experimentName
 
 				.collapse.navbar-collapse
 					ul.nav.navbar-nav
@@ -40,10 +43,11 @@ html
 											span Description
 
 								
-						li.active
-							a(href='/find_experiment') Experiments
 						li
-							a(href='#') Link
+							a(href='/edit_experiment') New Experiment
+						li
+							a(href='/view_all') View All
 					p.navbar-text.navbar-right Hello, 
 							a.navbar-link(href="#") Brendan Ritter
+		a(href='/edit_experiment') Edit
 		block content
