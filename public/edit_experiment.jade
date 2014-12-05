@@ -10,5 +10,43 @@ block experimentName
 block content
 	.center
 		input(type="text" name="experimentname" value="Experiment Name" disabled)
-		a(href='/') edit name
-	h3 Basic
+		a(href='#') edit name
+	h3 Basic Settings
+	h4 Select System
+	select
+		option(value=0) BCI
+		option(value=1) EEG
+		option(value=2) Optical Tracking
+		option(value=3) FNIRS
+	input(type="button", value="New System" disabled)
+	h3 Advanced Settings
+	h4 Data Source
+	select
+		option(value=0) USB
+		option(value=1) HDMI
+		option(value=2) Serial
+		option(value=3) LAN
+	table.table
+		thead
+			tr
+				th Variable
+				th Abbreviation
+				th Unit
+		tbody
+			tr 
+				td Blood Oxygen Level
+				td BOL
+				td ppm
+			tr 
+				td Eye X Position
+				td EYEX
+				td mm
+			tr 
+				td Eye Y Position
+				td EYEY
+				td mm
+			tr 
+				td Stress
+				td STS
+				td unitless
+	input(type="button",value="New Variable" disabled)
