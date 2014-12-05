@@ -6,7 +6,7 @@ $( document ).ready(function() {
     	$('#search-dropdown').removeClass('hide');
    	});
 
-  	$("#search").focusout(function(){
+  	$("#hide-box").click(function(){
     	console.log('Focus lost');
     	$('#search-dropdown').addClass('hide');
    	}); 	

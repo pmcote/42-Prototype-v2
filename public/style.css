@@ -1,6 +1,8 @@
 #search-dropdown{
-	/*border:5px,o/utset,transparent;*/
-	border-style: outset;
-	border-width: 1px;
+	border: 1px solid gray;
+	background-color: #eeeeee;
 	border-radius: 5px;
+	position: absolute;
+	width: 195px;
+	padding: 5px;
 }
