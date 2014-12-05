@@ -43,7 +43,7 @@ router.get('/new_user', function(req, res) {
 });
 
 router.get('/edit_experiment', function(req, res) {
-	res.render('editexperiment');
+	res.render('edit_experiment');
 })
 
 router.get('/find_experiment', function(req, res) {

@@ -1,0 +1,14 @@
+doctype
+extends layout
+
+block addToHeader
+	link(href="edit_experiment.css", rel="stylesheet", type="text/css")
+
+block experimentName
+	p Edit Experiment
+
+block content
+	.center
+		input(type="text" name="experimentname" value="Experiment Name" disabled)
+		a(href='/') edit name
+	h3 Basic
