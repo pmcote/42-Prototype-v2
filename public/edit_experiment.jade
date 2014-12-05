@@ -8,7 +8,46 @@ block experimentName
 	p Edit Experiment
 
 block content
-	.center
-		input(type="text" name="experimentname" value="Experiment Name" disabled)
-		a(href='/') edit name
-	h3 Basic
+	h1.center Edit "Experiment Name"
+	a.center(href='#') edit name
+	div.outerbox		
+		h3#nulltopmargin Basic Settings
+		p.inline Select System
+		select.inline.combo
+			option(value=0) BCI
+			option(value=1) EEG
+			option(value=2) Optical Tracking
+			option(value=3) FNIRS
+		input.fullwidth.disbutton(type="button", value="New System" disabled)
+		.line
+		h3#nulltopmargin Advanced Settings
+		p.inline Data Source
+		select.inline.combo
+			option(value=0) USB
+			option(value=1) HDMI
+			option(value=2) Serial
+			option(value=3) LAN
+		table.table
+			thead
+				tr
+					th Variable
+					th Abbreviation
+					th Unit
+			tbody
+				tr 
+					td Blood Oxygen Level
+					td BOL
+					td ppm
+				tr 
+					td Eye X Position
+					td EYEX
+					td mm
+				tr 
+					td Eye Y Position
+					td EYEY
+					td mm
+				tr 
+					td Stress
+					td STS
+					td unitless
+		input.fullwidth(type="button",value="New Variable" disabled)
