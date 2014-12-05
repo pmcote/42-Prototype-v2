@@ -11,21 +11,20 @@ html
 	body
 		.navbar.navbar-default
 			.container-fluid
-				.navbar-header
-					a.navbar-brand(href='/')
-						span.glyphicon.glyphicon-home
-					a.navbar-brand(href='#')
-						span(title="Back").glyphicon.glyphicon-chevron-left
-					block experimentName
-
 				.collapse.navbar-collapse
 					ul.nav.navbar-nav
+						li 
+							a(href='/') Home
+						li 
+							a(href='#') Back
+						li
+							block experimentName
 						li
 							form.navbar-form.navbar-left(role='search')
 								.form-group.search
 									input.form-control(type='text', placeholder='Search' id='search')
-									button.btn.btn-default(type='submit') 
-										span.glyphicon.glyphicon-search(aria-hidden='true')
+									//- button.btn.btn-default(type='submit') 
+									//- 	span.glyphicon.glyphicon-search(aria-hidden='true')
 								div#search-dropdown.hide
 									h6 Search by Patient 
 									ul
