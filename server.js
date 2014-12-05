@@ -42,6 +42,10 @@ router.get('/new_user', function(req, res) {
 	res.render('new_user');
 });
 
+router.get('/view_all', function(req, res) {
+	res.render('view_all');
+});
+
 router.get('/edit_experiment', function(req, res) {
 	res.render('editexperiment');
 })
